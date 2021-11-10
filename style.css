@@ -1,0 +1,154 @@
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body
+{
+    background: url("https://user-images.githubusercontent.com/6901805/58038897-167f0280-7ae6-11e9-94eb-88e880a25f0f.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.jumbotron
+{
+    background-image:url("https://twistedsifter.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-18.gif")!important;
+    color: white!important;;
+    text-align: center;
+}
+
+
+.outer
+{
+    margin: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.base
+{
+    margin: 2px;
+    margin-top:20px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:rgb(27, 24, 24) 2px 2px 2px 2px;
+}
+
+.upper
+{
+    height: 60px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top:1vw;
+    border-top-right-radius: 10px;
+}
+
+.bottom
+{
+    background-color: rgb(224, 163, 84);
+    color: white;
+    padding: 2vw;
+}
+
+.calculator
+{
+    background-color: rgb(133, 133, 189);
+    text-align: center;
+    height: 250px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius:10px;
+    padding-top: 25px;
+}
+
+input
+{
+    border-radius: 5px;
+    padding: 2px;
+    border:2px solid rgba(11, 35, 63, 0.753);
+}
+
+button
+{
+    background-color: rgba(0, 0, 0, 0.671)!important;
+    border: solid 3px white!important;
+    border-radius: 5px!important;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.footerinr
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgb(48, 47, 47);
+    font-size: 15px;
+}
+
+li
+{
+    list-style: none;
+    margin: 2px;
+}
+
+ul
+{
+    list-style-type: none;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+
+.copyright
+{
+    color: white;
+}
+
+.credit{
+    display: inline-flex;
+    padding: 20px;
+    color:white;
+  }
+
+  .foot_back{
+      text-align: center;
+        /* background: #d8c4b7; */
+  }
+  
+  @keyframes beat{
+    to { transform: scale(1.4); }
+  }
+  
+  .heart{
+    margin:0;
+    color: red;
+    animation: beat .25s infinite alternate;
+    padding: 0px 5px;
+  }
