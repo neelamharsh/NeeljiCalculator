@@ -53,14 +53,14 @@ body
 
 .bottom
 {
-    background-color: rgb(224, 163, 84);
+    background-color: rgb(165, 102, 19);
     color: white;
     padding: 2vw;
 }
 
 .calculator
 {
-    background-color: rgb(133, 133, 189);
+    background-color: rgb(97, 97, 185);
     text-align: center;
     height: 250px;
     text-align: center;
@@ -73,7 +73,7 @@ input
 {
     border-radius: 5px;
     padding: 2px;
-    border:2px solid rgba(11, 35, 63, 0.753);
+    border:2px solid rgba(0, 7, 14, 0.884);
 }
 
 button

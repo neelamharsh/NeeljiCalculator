@@ -21,8 +21,8 @@
 <body>
 
   <div class="jumbotron text-center">
-  <h1>Neelji Calculator</h1>
-  <h4><p>Easier | faster | free</p></h4>
+  <h1>Neelji Creations</h1>
+  <h4><p>Easier | faster | Safer</p></h4>
   </div>
 
   
@@ -34,37 +34,55 @@
 
         <div class="upper">
 
-            GCD Calculator
+            Addition
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to find the addition of two number.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="add1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="add2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="add()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="add3">
             </p>
+
+            <script>
+                function add()
+                {
+                    let a = document.getElementById("add1").value;
+                    let b = document.getElementById("add2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("add3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        document.getElementById("add3").value = a+b;
+                    }
+                }
+            </script>
 
         </div>
 
@@ -78,41 +96,60 @@
 
         <div class="upper">
 
-            GCD Calculator
+            Substraction
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to find the difference.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="sub1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="sub2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="sub()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="sub3">
             </p>
+
+            <script>
+                function sub()
+                {
+                    let a = document.getElementById("sub1").value;
+                    let b = document.getElementById("sub2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("sub3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        document.getElementById("sub3").value = a-b;
+                    }
+                }
+            </script>
 
         </div>
 
     </div>
+
 
 
 
@@ -122,41 +159,60 @@
 
         <div class="upper">
 
-            GCD Calculator
+            Multiplication
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to find the product of two number.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="pro1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="pro2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="pro()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="pro3">
             </p>
+
+            <script>
+                function pro()
+                {
+                    let a = document.getElementById("pro1").value;
+                    let b = document.getElementById("pro2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("pro3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        document.getElementById("pro3").value = a*b;
+                    }
+                }
+            </script>
 
         </div>
 
     </div>
+
 
 
     <!--- base 4 -->
@@ -165,37 +221,55 @@
 
         <div class="upper">
 
-            GCD Calculator
+            Division
 
         </div>
 
-        <div class="bottom">
+        <div class="bottom">S
 
             This module help you
-            to find the gcd of two number.
+            to find the Division(a/b) of two number.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="div1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="div2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="div()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="div3">
             </p>
+
+            <script>
+                function div()
+                {
+                    let a = document.getElementById("div1").value;
+                    let b = document.getElementById("div2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("div3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        document.getElementById("div3").value = a/b;
+                    }
+                }
+            </script>
 
         </div>
 
@@ -207,37 +281,55 @@
 
         <div class="upper">
 
-            GCD Calculator
+            Remainder (%)
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to find the Remainder (%) of two number.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="rim1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="rim2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="rim()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="rim3">
             </p>
+
+            <script>
+                function rim()
+                {
+                    let a = document.getElementById("rim1").value;
+                    let b = document.getElementById("rim2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("rim3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        document.getElementById("rim3").value = a%b;
+                    }
+                }
+            </script>
 
         </div>
 
@@ -250,7 +342,7 @@
 
         <div class="upper">
 
-            GCD Calculator
+            G.C.D | H.C.F
 
         </div>
 
@@ -264,23 +356,47 @@
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="gcd1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="gcd2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="gcd()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="gcd3">
             </p>
+
+            <script>
+                const gcds = (...arr) => {
+                    const _gcd = (x, y) => (!y ? x : gcds(y, x % y));
+                    return [...arr].reduce((a, b) => _gcd(a, b));
+                };
+
+                
+                function gcd()
+                {
+                    let a = document.getElementById("gcd1").value;
+                    let b = document.getElementById("gcd2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("gcd3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        document.getElementById("gcd3").value = gcds(a,b);
+                    }
+                }
+            </script>
 
         </div>
 
@@ -293,37 +409,58 @@
 
         <div class="upper">
 
-            GCD Calculator
+            L.C.M
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to find the LCM of two number.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="lcm1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="lcm2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="lcm()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="number" placeholder="999" readonly="readonly" id="lcm3">
             </p>
+
+            <script>
+                
+                function lcm()
+                {
+                    let a = document.getElementById("lcm1").value;
+                    let b = document.getElementById("lcm2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("lcm3").value = "0000000000000000000000";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        let c = gcds(a,b);
+                        c = ( a * b ) / c;
+                        document.getElementById("lcm3").value = c;
+                    }
+                }
+            </script>
 
         </div>
 
@@ -336,41 +473,63 @@
 
         <div class="upper">
 
-            GCD Calculator
+            IS Divisble 
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to check the divisibilibilty.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="chk1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="chk2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="chk()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="text" placeholder="YES/NO" readonly="readonly" id="chk3">
             </p>
+
+            <script>
+                function chk()
+                {
+                    let a = document.getElementById("chk1").value;
+                    let b = document.getElementById("chk2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("chk3").value = "NaN";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        if(a%b == 0)
+                        document.getElementById("chk3").value = "YES";
+                        else 
+                        document.getElementById("chk3").value = "NO";
+                    }
+                }
+            </script>
 
         </div>
 
     </div>
+
 
 
     <!--- base 9 -->
@@ -379,37 +538,56 @@
 
         <div class="upper">
 
-            GCD Calculator
+            Power (X<sup>Y</sup>)
 
         </div>
 
         <div class="bottom">
 
             This module help you
-            to find the gcd of two number.
+            to find the Y powers of X.
             
         </div>
 
         <div class="calculator">
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="pow1">
             </p>
 
             <p>
-                <input type="number" placeholder="999">
+                <input type="number" required placeholder="999" id="pow2">
             </p>
 
             <p>
-                <button class="btn btn-primary" disabled>
+                <button class="btn btn-primary" onclick="pow()">
                     <span class="spinner-grow spinner-grow-sm"></span>
                     Calculate
                   </button>
             </p>
 
             <p>
-                <input type="number" placeholder="999" readonly="readonly">
+                <input type="text" placeholder="999" readonly="readonly" id="pow3">
             </p>
+
+            <script>
+                function pow()
+                {
+                    let a = document.getElementById("pow1").value;
+                    let b = document.getElementById("pow2").value;
+                    if(a.length  == 0 || b.length  == 0) 
+                    {
+                        document.getElementById("pow3").value = "NaN";
+                    }
+                    else 
+                    {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                        let c = Math.pow(a,b);
+                        document.getElementById("pow3").value = c;
+                    }
+                }
+            </script>
 
         </div>
 
